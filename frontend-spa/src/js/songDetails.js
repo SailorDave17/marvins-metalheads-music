@@ -2,7 +2,7 @@ const songDetails = function(album) {
     const songDetails = document.querySelector(".details");
     songDetails.innerHTML = "";
     const songDetailsHeader = document.createElement("h2");
-    songDetailsHeader.innerText = `About: ${album.songs[0].songName}`;
+    songDetailsHeader.innerText = `About: "${album.songs[0].songName}"`;
     songDetails.appendChild(songDetailsHeader);
 
     const songInfo = document.createElement("div");
@@ -11,11 +11,11 @@ const songDetails = function(album) {
 
     let songElementName = document.createElement("p");
     songElementName.classList.add("song-name");
-    songElementName.innerText = `Song Name: ${album.songs[0].songName}`
+    songElementName.innerText = `Song Name: "${album.songs[0].songName}"`
 
     let songElementArtist = document.createElement("p");
     songElementArtist.classList.add("artist");
-    songElementArtist.innerText = `Artist Name: ${album.artist}`
+    songElementArtist.innerText = `Artist: ${album.artist}`
 
     let songElementPlayTime = document.createElement("p");
     songElementPlayTime.classList.add("song-playtime");
