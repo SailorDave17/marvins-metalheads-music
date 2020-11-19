@@ -11,11 +11,11 @@ const albumDetails = function(album) {
 
     let albumElementName = document.createElement("p")
     albumElementName.classList.add("album-name")
-    albumElementName.innerText = `Album Name: ${album.albumName}`
+    albumElementName.innerText = `Album: ${album.albumName}`
 
     let albumElementArtist = document.createElement("p")
     albumElementArtist.classList.add("artist")
-    albumElementArtist.innerText = `Artist Name: ${album.artist}`
+    albumElementArtist.innerText = `Artist: ${album.artist}`
 
     let albumElementLabel = document.createElement("p")
     albumElementLabel.classList.add("record-label")
