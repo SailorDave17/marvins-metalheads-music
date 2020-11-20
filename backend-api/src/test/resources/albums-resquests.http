@@ -30,3 +30,13 @@ Content-Type: application/json
   "playTime": "New Play Time",
   "artist": "New Artist"
 }
+
+### Add a Comment
+PATCH http://localhost:8080/api/albums/comments
+Content-Type: application/json
+
+{
+"comment": "This is a comment"
+}
+
+

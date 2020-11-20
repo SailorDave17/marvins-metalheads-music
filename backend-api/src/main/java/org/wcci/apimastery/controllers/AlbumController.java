@@ -1,4 +1,4 @@
-package org.wcci.apimastery;
+package org.wcci.apimastery.controllers;
 
 import org.springframework.web.bind.annotation.*;
 import org.wcci.apimastery.resources.Album;
