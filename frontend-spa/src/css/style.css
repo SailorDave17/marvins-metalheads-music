@@ -46,7 +46,6 @@ html {
     border-radius: 7px;
     font-size: x-large;
     letter-spacing: 1.5px;
-    
 }
 
 .website-title {
@@ -80,7 +79,13 @@ input[type=text]::placeholder {
     border-radius: 5px;
 }
 
-.new-submission {
+.new-submission ::placeholder {
+    font-size: x-large;
+    font-family: Righteous;
+}
+
+.new-submission button {
+    font-size: x-large;
     font-family: Righteous;
 }
 
@@ -90,7 +95,6 @@ input[type=text]::placeholder {
     height: 350px;
     perspective: 1000px;
     justify-self: right;
-   
 }
 
 .flip-card-inner {
@@ -131,15 +135,14 @@ input[type=text]::placeholder {
 
 .song-card-list {
     list-style: none;
-    
 }
 
-.album-info{
+.album-info {
     line-height: 65px;
     font-size: 20px;
 }
 
-.song-info{
+.song-info {
     line-height: 65px;
     font-size: 20px;
 }

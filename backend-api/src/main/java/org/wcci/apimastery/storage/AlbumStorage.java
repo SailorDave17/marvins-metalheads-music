@@ -16,8 +16,8 @@ public class AlbumStorage {
         return albumRepo.findById(id).get();
     }
 
-    public void saveAlbum(Album albumToSave) {
-        albumRepo.save(albumToSave);
+    public Album saveAlbum(Album albumToSave) {
+        return albumRepo.save(albumToSave);
     }
 
     public void deleteAlbumById(Long id){

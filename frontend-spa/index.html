@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <button class="add-song-button"><img src="/frontend-spa/src/img/addson.png"></button>
+        <button class="add-song-button">Add A Song</button>
         <h1 class="website-title">Marvin's Music</h1>
         <img src="/frontend-spa/src/img/marvinDancing.gif" alt="marvinDancing" class="marvin">
 
@@ -22,28 +22,24 @@
             <div class="modal-actions">
                 <button type="button" class="exit">&times;</button></div>
 
-            <form class="new-submission" method="post"><select id="selection">
-                    <option value="song">Song</option>
-                </select>
+            <form class="new-submission" method="post">
                 <br>
-                <input type="text" placeholder="Album"> <br>
-                <input type="text" placeholder="Song Title"> <br>
-                <input type="text" placeholder="Artist"> <br>
-                <input type="text" placeholder="Duration"> <br>
+                <input type="text" placeholder="Album Name" class="album-name"> <br>
+                <input type="text" placeholder="Artist" class="artist-name"> <br>
+                <input type="text" placeholder="Label" class="label"> <br>
+                <input type="text" placeholder="Songs, separated by commas" class="song-list-input"><br>
                 <button class="form-submit">Submit</button>
             </form>
         </div>
     </header>
 
     <div class="container">
-
         <div class="song-list">
         </div>
 
         <div class="details">
         </div>
     </div>
-
     <script src="/frontend-spa/src/js/app.js" type="module"></script>
 </body>
 

@@ -34,8 +34,11 @@ public class AlbumController {
     }
 
     @PostMapping("/api/albums")
-    public Iterable<Album> addAlbum(@RequestBody Album albumToAdd) {
-        albumStorage.saveAlbum(albumToAdd);
+    public Iterable<Album> addAlbum(@RequestBody Album albumToAdd) throws InterruptedException {
+        Album album = albumStorage.saveAlbum(albumToAdd);
+        Song song = new Song(album, "placeholder", "placeholder", "placeholder", album.getArtist());
+        songRepo.save(song);
+        Thread.sleep(500);
         return albumStorage.retrieveAllAlbums();
 
 
